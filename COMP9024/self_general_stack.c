@@ -45,7 +45,7 @@ void expand_stack_size(struct stack* current_stack)
 	if (current_stack->size == current_stack->cnt)
 	{
 		current_stack->size *= 2;
-		current_stack->data = realloc(current_stack->data, current_stack->size*current_stack->typeCode+3*sizeof(int32_t));
+		current_stack->data = realloc(current_stack->data, current_stack->size*current_stack->typeCode);
 	}
 	return;
 }
