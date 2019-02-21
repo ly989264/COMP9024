@@ -1,6 +1,7 @@
 #pragma once
 #include <stdio.h>
 #include <stdlib.h>
+#define SELF_INT_STACK
 
 struct stack
 {
