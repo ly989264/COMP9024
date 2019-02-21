@@ -1,4 +1,4 @@
-#include "stack.h"
+#include "self_int_stack.h"
 
 struct stack* init_stack(const unsigned prefer_size)
 {
@@ -45,4 +45,13 @@ int get_len(const struct stack* current_stack)
 void clear_stack(struct stack* current_stack)
 {
 	free(current_stack);
+}
+
+int peak(const struct stack* current_stack) {
+	if (current_stack->cnt == 0) {
+		printf("The current stack is empty, cannot operate"
+			" the peak operation.\n");
+		return -1;
+	}
+	return *(current_stack->p + current_stack->cnt -1);
 }

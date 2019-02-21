@@ -16,3 +16,4 @@ void push(struct stack* current_stack, const int value);
 int pop(struct stack* current_stack);
 int get_len(const struct stack* current_stack);
 void clear_stack(struct stack* current_stack);
+int peak(const struct stack* current_stack);
