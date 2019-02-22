@@ -139,11 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="lecture_stack.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="problem_set_queue.c" />
     <ClCompile Include="self_general_stack.c" />
     <ClCompile Include="self_int_stack.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="lecture_stack.h" />
+    <ClInclude Include="problem_set_queue.h" />
     <ClInclude Include="self_general_stack.h" />
     <ClInclude Include="self_int_stack.h" />
   </ItemGroup>

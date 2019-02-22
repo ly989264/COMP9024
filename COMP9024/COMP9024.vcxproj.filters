@@ -24,12 +24,24 @@
     <ClCompile Include="self_int_stack.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lecture_stack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="problem_set_queue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="self_general_stack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="self_int_stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lecture_stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="problem_set_queue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

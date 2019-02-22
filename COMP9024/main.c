@@ -1,5 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
 // #include "self_int_stack.h"
-#include "self_general_stack.h"
+// #include "self_general_stack.h"
+// #include "lecture_stack.h"
+#include "problem_set_queue.h"
 
 
 int main()
@@ -31,6 +35,40 @@ int main()
 	printf("The length of the stack is %d.\n", get_length(x));
 	printf("%s\n", gis_empty(x));
 	gdelete_stack(x);
+#endif
+#ifdef LECTURE_STACK
+	l_stackInit();
+	l_push('a');
+	l_push('b');
+	printf("%c\n", l_pop());
+	printf("%s\n", (l_isEmpty() == 1) ? "The stack is empty." : "The stack is not empty.");
+	l_stackInit();
+	printf("%s\n", (l_isEmpty() == 1) ? "The stack is empty." : "The stack is not empty.");
+#endif
+#ifdef PROBLEM_SET_QUEUE
+	p_queueInit();
+	p_enqueue(1);
+	p_enqueue(2);
+	p_enqueue(3);
+	p_enqueue(4);
+	p_enqueue(5);
+	p_enqueue(6);
+	p_enqueue(7);
+	p_enqueue(8);
+	printf("%s\n", (p_isEmpty()) ? "The queue is empty." : "The queue is not empty.");
+	printf("%d\n",p_dequeue());
+	printf("%d\n", p_dequeue());
+	p_enqueue(9);
+	p_enqueue(10);
+	printf("%d\n", p_dequeue());
+	printf("%d\n", p_dequeue());
+	printf("%d\n", p_dequeue());
+	printf("%d\n", p_dequeue());
+	printf("%d\n", p_dequeue());
+	printf("%d\n", p_dequeue());
+	printf("%d\n", p_dequeue());
+	printf("%d\n", p_dequeue());
+	printf("%s\n", (p_isEmpty()) ? "The queue is empty." : "The queue is not empty.");
 #endif
 	system("pause");
 	return 0;
