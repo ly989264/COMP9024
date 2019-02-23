@@ -3,7 +3,8 @@
 // #include "self_int_stack.h"
 // #include "self_general_stack.h"
 // #include "lecture_stack.h"
-#include "problem_set_queue.h"
+// #include "problem_set_queue.h"
+#include "self_int_queue.h"
 
 
 int main()
@@ -69,6 +70,36 @@ int main()
 	printf("%d\n", p_dequeue());
 	printf("%d\n", p_dequeue());
 	printf("%s\n", (p_isEmpty()) ? "The queue is empty." : "The queue is not empty.");
+#endif
+#ifdef SELF_INT_QUEUE
+	struct queue* x = initQueue();
+	printf("%s\n", isQueueEmptyVi(x));
+	enqueue(x, 1);
+	enqueue(x, 2);
+	enqueue(x, 3);
+	printf("Now: %s\n", isQueueEmptyVi(x));
+	enqueue(x, 1);
+	enqueue(x, 2);
+	enqueue(x, 3);
+	enqueue(x, 1);
+	enqueue(x, 2);
+	enqueue(x, 3);
+	enqueue(x, 1);
+	enqueue(x, 2);
+	enqueue(x, 3);
+	printf("The length of this queue is %d.\n", lenQueue(x));
+	printf("Now try dequeue: \n");
+	printf("%d\n", dequeue(x));
+	printf("%d\n", dequeue(x));
+	printf("%d\n", dequeue(x));
+	printf("%d\n", dequeue(x));
+	printf("%d\n", dequeue(x));
+	printf("%d\n", dequeue(x));
+	printf("The length of this queue is %d.\n", lenQueue(x));
+	printf("%s\n", isQueueEmptyVi(x));
+	printf("%d\n", peek(x));
+	printf("The length of this queue is %d.\n", lenQueue(x));
+	clearQueue(x);
 #endif
 	system("pause");
 	return 0;

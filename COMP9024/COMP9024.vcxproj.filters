@@ -30,6 +30,12 @@
     <ClCompile Include="problem_set_queue.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="self_general_queue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="self_int_queue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="self_general_stack.h">
@@ -42,6 +48,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="problem_set_queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="self_general_queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="self_int_queue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
