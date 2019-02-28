@@ -4,7 +4,8 @@
 // #include "self_general_stack.h"
 // #include "lecture_stack.h"
 // #include "problem_set_queue.h"
-#include "self_int_queue.h"
+// #include "self_int_queue.h"
+#include "self_single_linked_list.h"
 
 
 int main()
@@ -100,6 +101,37 @@ int main()
 	printf("%d\n", peek(x));
 	printf("The length of this queue is %d.\n", lenQueue(x));
 	clearQueue(x);
+#endif
+#ifdef SELF_SINGLE_LINKED_LIST
+	/*
+	 *	testing these functions:
+	 *	struct node* create_linked_list(const int value);
+	 *	void insert_node(struct node* current_ll, const int value);
+	 *	struct node* delete_last_node(struct node* current_ll);
+	 *	struct node* delete_node(struct node* current_ll, const int value);
+	 *	void show_linked_list(const struct node* current_ll);
+	 *	struct node* search_value(const struct node* current_ll, const int value);
+	 *	void free_linked_list(struct node* current_ll);
+	 */
+	struct node* linked_list = create_linked_list(10);
+	insert_node(linked_list, 15);
+	insert_node(linked_list, 20);
+	insert_node(linked_list, 10);
+	insert_node(linked_list, 25);
+	insert_node(linked_list, 30);
+	insert_node(linked_list, 35);
+	insert_node(linked_list, 40);
+	show_linked_list(linked_list);
+	linked_list = delete_last_node(linked_list);
+	show_linked_list(linked_list);
+	linked_list = delete_last_node(linked_list);
+	show_linked_list(linked_list);
+	linked_list = delete_node(linked_list, 10);
+	show_linked_list(linked_list);
+	struct node* t20 = search_value(linked_list, 20);
+	printf("%d\n", t20->value);
+	show_linked_list(t20);
+	free_linked_list(linked_list);
 #endif
 	system("pause");
 	return 0;

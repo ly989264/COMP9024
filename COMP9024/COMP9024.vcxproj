@@ -146,6 +146,7 @@
     <ClCompile Include="self_general_stack.c" />
     <ClCompile Include="self_int_queue.c" />
     <ClCompile Include="self_int_stack.c" />
+    <ClCompile Include="self_single_linked_list.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lecture_stack.h" />
@@ -154,6 +155,7 @@
     <ClInclude Include="self_general_stack.h" />
     <ClInclude Include="self_int_queue.h" />
     <ClInclude Include="self_int_stack.h" />
+    <ClInclude Include="self_single_linked_list.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

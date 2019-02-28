@@ -36,6 +36,9 @@
     <ClCompile Include="self_int_queue.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="self_single_linked_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="self_general_stack.h">
@@ -54,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="self_int_queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="self_single_linked_list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
