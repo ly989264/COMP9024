@@ -39,6 +39,12 @@
     <ClCompile Include="self_single_linked_list.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="self_binary_tree_adt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="self_tree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="self_general_stack.h">
@@ -60,6 +66,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="self_single_linked_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="self_binary_tree_adt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="self_tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

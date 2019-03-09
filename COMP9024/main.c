@@ -5,7 +5,9 @@
 // #include "lecture_stack.h"
 // #include "problem_set_queue.h"
 // #include "self_int_queue.h"
-#include "self_single_linked_list.h"
+// #include "self_single_linked_list.h"
+// #include "self_tree.h"
+#include "self_binary_tree_adt.h"
 
 
 int main()
@@ -133,6 +135,33 @@ int main()
 	show_linked_list(t20);
 	free_linked_list(linked_list);
 #endif
+	struct binary_tree* x = create_binary_tree();
+	// printf("%d\n", is_binary_tree_empty(x));
+	add_binary_node(x, 5);
+	// printf("%d\n", is_binary_tree_empty(x));
+	add_binary_node(x, 3);
+	add_binary_node(x, 8);
+	add_binary_node(x, 6);
+	add_binary_node(x, 7);
+	add_binary_node(x, 9);
+	traverse_testing(x->root);
+	printf("%d\n", get_size(x));
+	printf("%d\n", check_existence(x, 1));
+	printf("%d\n", check_existence(x, 5));
+	printf("%d\n", check_existence(x, 2));
+	printf("%d\n", check_existence(x, 6));
+	printf("%d\n", quick_check_existence(x, 1));
+	printf("%d\n", quick_check_existence(x, 5));
+	printf("%d\n", quick_check_existence(x, 2));
+	printf("%d\n", quick_check_existence(x, 6));
+	printf("\n");
+	print_binary_tree(x);
+	printf("\n");
+	delete_binary_node(x, 5);
+	traverse_testing(x->root);
+	printf("\n");
+	print_binary_tree(x);
+	free_binary_tree(x);
 	system("pause");
 	return 0;
 }
